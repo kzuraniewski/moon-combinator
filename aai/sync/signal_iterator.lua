@@ -1,5 +1,4 @@
 -- desc: synchronic signal iterator
--- FIXME: when no units of type, doesnt work
 local SIGNAL_NAMES = {
     'vehicle-hauler-0-_-signal', 'vehicle-miner-0-_-signal',
     'vehicle-miner-mk2-0-_-signal'
