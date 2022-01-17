@@ -1,7 +1,8 @@
 -- desc: synchronic signal iterator
 local SIGNAL_NAMES = {
     'vehicle-hauler-0-_-signal', 'vehicle-miner-0-_-signal',
-    'vehicle-miner-mk2-0-_-signal'
+    'vehicle-miner-mk2-0-_-signal', 'vehicle-miner-mk3-0-_-signal',
+    'vehicle-miner-mk4-0-_-signal', 'vehicle-miner-mk5-0-_-signal'
 }
 
 -- if last quantity was 0 then move to next signal, else increment unitIndex
