@@ -6,6 +6,7 @@
 lib = {};
 
 lib.CLOCK_SIGNAL = 'signal-A';
+lib.MAX_DELAY = 60 * 60 * 60 * 24 * 365; -- 1 year
 
 --- Pass specified signals from input to output if received. 
 --- Provide signal names as arguments or leave empty to pass all.
@@ -25,7 +26,7 @@ function lib.passSignals(...)
 end
 
 function lib.createTrigger(signalName)
-    delay = math.maxinteger;
+    delay = lib.MAX_DELAY;
     irq = signalName;
 end
 
