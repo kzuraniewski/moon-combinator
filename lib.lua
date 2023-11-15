@@ -1,4 +1,3 @@
---- v. 0.1.0
 --- This is a universal library to the AAI Moon Combinator control system
 --- The below code will be compressed and parsed into each combinator script
 --- The library operates solely on red wire
@@ -6,8 +5,7 @@
 --- common utility functions for controllers
 lib = {};
 
--- clear output
-out = {};
+lib.CLOCK_SIGNAL = 'signal-A';
 
 --- Pass specified signals from input to output if received. 
 --- Provide signal names as arguments or leave empty to pass all.
@@ -29,4 +27,9 @@ end
 function lib.createTrigger(signalName)
     delay = math.maxinteger;
     irq = signalName;
+end
+
+--- synchronize this controller with attached clock
+function lib.synchronize()
+    lib.createTrigger(lib.CLOCK_SIGNAL);
 end
