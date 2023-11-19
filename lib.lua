@@ -34,3 +34,8 @@ end
 function lib.synchronize()
     lib.createTrigger(lib.CLOCK_SIGNAL);
 end
+
+function lib.reset()
+    out = {};
+    var = {};
+end
