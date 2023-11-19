@@ -13,4 +13,5 @@ update() {
 update "aai/universal_marker.lua"
 update "aai/sync/clock.lua"
 update "aai/sync/signal_iterator.lua"
-update "aai/sync/array_iterator.lua"
+update "aai/sync/value_iterator.lua"
+update "aai/sync/iterator.lua"
